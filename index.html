@@ -6,13 +6,20 @@
 
     <style>
         body {
-            background-color: #f0f0f0;
+            background-color: #000;
             font-family: Arial, sans-serif;
             margin: 20px;
         }
 
         h1 {
             color: #333;
+            text-align: center;
+            color: white;
+            text-decoration: underline;
+        }
+
+        h2{
+            color: white;
         }
 
         iframe {
@@ -22,7 +29,7 @@
             width: 100%;
         }
 
-        .container{
+        .container {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -30,14 +37,20 @@
         }
     </style>
 
-    <div class="container">
-        <iframe id="countries" title="Countries" width="500" height="750" src="./Network.html">
-        </iframe>
-        <iframe id="collaborations" title="Collabs" width="500" height="750"
-            src="./Institution collab.html">
-
-
-        </iframe>
+    <div>
+        <h1>CBS Collaboration networks</h1>
+        <div class="container">
+            <div style="width: 100%;">
+                <h2>Country Collaboration Network</h2>
+                <iframe id="countries" title="Countries" width="500" height="750" src="./Network.html">
+                </iframe>
+            </div>
+            <div style="width: 100%;">
+                <h2>Institution Collaboration Network</h2>
+                <iframe id="institutions" title="Institutions" width="500" height="750" src="./Institution collab.html">
+                </iframe>
+            </div>
+        </div>
     </div>
 
 </html>
